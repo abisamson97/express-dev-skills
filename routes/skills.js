@@ -8,7 +8,9 @@ router.get('/new', skillsCtrl.new);
 router.get('/', skillsCtrl.index);
 // GET /skills/ :id
 router.get('/:id', skillsCtrl.show);
-// GET /todos/new
 
+router.post('/', skillsCtrl.create); 
+
+router.delete('/:id', skillsCtrl.delete);
 
 module.exports = router;
